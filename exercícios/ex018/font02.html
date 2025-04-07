@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'Snow' ;
+            src: url('fonts/SNOW BLUE.otf') format('opentype'), url('fonts/SNOW BLUE.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+
+            /*
+Tipos de Format()
+-opentype (otf)
+-truetype (ttf)
+-embedded-opentype
+-true-att(Apple Advanced Typography)
+- svg
+*/
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1{
+            font-family: 'Snow';
+            font-size: 3em;
+            font-weight: normal;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>John Snow</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur quaerat, eos officia voluptatibus magnam numquam illo ab iure corporis dolor repudiandae voluptates totam iusto, consectetur officiis vero facere non excepturi.</p>
+</body>
+</html>
