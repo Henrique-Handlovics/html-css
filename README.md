@@ -3,4 +3,17 @@
 
  Projetos Realizados:
 
- <a href="https://henrique-handlovics.github.io/html-css/desafios/d010/index.html">Visualizar o Mini-projeto Android</a>
+ <p>Visualizar o<a href="https://henrique-handlovics.github.io/html-css/desafios/d010/index.html">Projeto Android</a>.</p>
+ <p>Visualizar o<a href="https://henrique-handlovics.github.io/html-css/desafios/d012/index.html">Projeto Cordel</a>.</p>
+
+ <style>
+    a{
+        display: none;
+        color: aqua;
+    }
+
+    a:hover{
+        display: underline;
+        color: black;
+    }
+ </style>
