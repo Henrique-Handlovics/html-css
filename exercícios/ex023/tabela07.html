@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+  border-collapse: collapse;
+}
+
+caption{
+            font-size: 1em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+
+td{
+            border: 1px solid black;
+            padding: 8px;
+  color: black;
+        }
+
+th{
+  color: black;
+    font-size:1.5em;
+            border: 1px solid black;
+            padding: 8px;
+}
+
+ thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: cadetblue;
+        }
+
+tbody > tr:nth-child(2n){
+            background-color: lightgray;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <table border="1">
+        <thead>
+          <tr>
+            <th>Categoria</th>
+            <th>Tag</th>
+            <th>Descrição</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Estrutura básica</td>
+            <td>&lt;!DOCTYPE html&gt;</td>
+            <td>Declara o tipo de documento (HTML5)</td>
+          </tr>
+          <tr>
+            <td>Estrutura básica</td>
+            <td>&lt;html&gt;</td>
+            <td>Elemento raiz de um documento HTML</td>
+          </tr>
+          <tr>
+            <td>Estrutura básica</td>
+            <td>&lt;head&gt;</td>
+            <td>Contém metadados do documento</td>
+          </tr>
+          <tr>
+            <td>Estrutura básica</td>
+            <td>&lt;body&gt;</td>
+            <td>Contém o conteúdo visível da página</td>
+          </tr>
+          <tr>
+            <td>Cabeçalhos</td>
+            <td>&lt;h1&gt; até &lt;h6&gt;</td>
+            <td>Títulos de diferentes níveis, de mais importante (h1) ao menos (h6)</td>
+          </tr>
+          <tr>
+            <td>Texto</td>
+            <td>&lt;p&gt;</td>
+            <td>Parágrafo</td>
+          </tr>
+          <tr>
+            <td>Texto</td>
+            <td>&lt;br&gt;</td>
+            <td>Quebra de linha</td>
+          </tr>
+          <tr>
+            <td>Texto</td>
+            <td>&lt;hr&gt;</td>
+            <td>Linha horizontal (separador)</td>
+          </tr>
+          <tr>
+            <td>Texto</td>
+            <td>&lt;strong&gt;</td>
+            <td>Texto em negrito (semântico)</td>
+          </tr>
+          <tr>
+            <td>Texto</td>
+            <td>&lt;b&gt;</td>
+            <td>Texto em negrito (não semântico)</td>
+          </tr>
+          <tr>
+            <td>Texto</td>
+            <td>&lt;em&gt;</td>
+            <td>Texto em itálico (semântico)</td>
+          </tr>
+          <tr>
+            <td>Texto</td>
+            <td>&lt;i&gt;</td>
+            <td>Texto em itálico (não semântico)</td>
+          </tr>
+          <tr>
+            <td>Texto</td>
+            <td>&lt;u&gt;</td>
+            <td>Texto sublinhado</td>
+          </tr>
+          <tr>
+            <td>Texto</td>
+            <td>&lt;small&gt;</td>
+            <td>Texto menor</td>
+          </tr>
+          <tr>
+            <td>Texto</td>
+            <td>&lt;mark&gt;</td>
+            <td>Texto destacado (marcado)</td>
+          </tr>
+          <tr>
+            <td>Listas</td>
+            <td>&lt;ul&gt;</td>
+            <td>Lista não ordenada</td>
+          </tr>
+          <tr>
+            <td>Listas</td>
+            <td>&lt;ol&gt;</td>
+            <td>Lista ordenada</td>
+          </tr>
+          <tr>
+            <td>Listas</td>
+            <td>&lt;li&gt;</td>
+            <td>Item de lista</td>
+          </tr>
+          <tr>
+            <td>Links e mídias</td>
+            <td>&lt;a&gt;</td>
+            <td>Hiperlink</td>
+          </tr>
+          <tr>
+            <td>Links e mídias</td>
+            <td>&lt;img&gt;</td>
+            <td>Imagem</td>
+          </tr>
+          <tr>
+            <td>Formulários</td>
+            <td>&lt;form&gt;</td>
+            <td>Formulário</td>
+          </tr>
+          <tr>
+            <td>Formulários</td>
+            <td>&lt;input&gt;</td>
+            <td>Campo de entrada</td>
+          </tr>
+          <tr>
+            <td>Tabelas</td>
+            <td>&lt;table&gt;</td>
+            <td>Tabela</td>
+          </tr>
+          <tr>
+            <td>Tabelas</td>
+            <td>&lt;tr&gt;</td>
+            <td>Linha da tabela</td>
+          </tr>
+          <tr>
+            <td>Tabelas</td>
+            <td>&lt;td&gt;</td>
+            <td>Célula de dado</td>
+          </tr>
+          <tr>
+            <td>Semânticas</td>
+            <td>&lt;header&gt;</td>
+            <td>Cabeçalho de seção</td>
+          </tr>
+          <tr>
+            <td>Semânticas</td>
+            <td>&lt;footer&gt;</td>
+            <td>Rodapé de seção</td>
+          </tr>
+          <tr>
+            <td>Outras</td>
+            <td>&lt;div&gt;</td>
+            <td>Contêiner genérico</td>
+          </tr>
+          <tr>
+            <td>Outras</td>
+            <td>&lt;span&gt;</td>
+            <td>Contêiner em linha</td>
+          </tr>
+        </tbody>
+      </table>
+<br> <br> <br>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Categoria</th>
+            <th>Propriedade</th>
+            <th>Descrição</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Texto -->
+          <tr>
+            <td>Texto</td>
+            <td>color</td>
+            <td>Cor do texto</td>
+          </tr>
+          <tr>
+            <td>Texto</td>
+            <td>font-size</td>
+            <td>Tamanho da fonte</td>
+          </tr>
+          <tr>
+            <td>Texto</td>
+            <td>font-family</td>
+            <td>Família da fonte</td>
+          </tr>
+          <tr>
+            <td>Texto</td>
+            <td>font-weight</td>
+            <td>Espessura da fonte</td>
+          </tr>
+          <tr>
+            <td>Texto</td>
+            <td>font-style</td>
+            <td>Estilo da fonte (normal, italic)</td>
+          </tr>
+          <tr>
+            <td>Texto</td>
+            <td>text-align</td>
+            <td>Alinhamento do texto</td>
+          </tr>
+          <tr>
+            <td>Texto</td>
+            <td>text-decoration</td>
+            <td>Decoração do texto (underline, line-through)</td>
+          </tr>
+          <tr>
+            <td>Texto</td>
+            <td>line-height</td>
+            <td>Altura da linha</td>
+          </tr>
+          <tr>
+            <td>Texto</td>
+            <td>letter-spacing</td>
+            <td>Espaçamento entre letras</td>
+          </tr>
+          <tr>
+            <td>Texto</td>
+            <td>word-spacing</td>
+            <td>Espaçamento entre palavras</td>
+          </tr>
+      
+          <!-- Cor e fundo -->
+          <tr>
+            <td>Cor e fundo</td>
+            <td>background-color</td>
+            <td>Cor de fundo</td>
+          </tr>
+          <tr>
+            <td>Cor e fundo</td>
+            <td>background-image</td>
+            <td>Imagem de fundo</td>
+          </tr>
+          <tr>
+            <td>Cor e fundo</td>
+            <td>background-size</td>
+            <td>Tamanho do fundo</td>
+          </tr>
+          <tr>
+            <td>Cor e fundo</td>
+            <td>background-position</td>
+            <td>Posição do fundo</td>
+          </tr>
+          <tr>
+            <td>Cor e fundo</td>
+            <td>background-repeat</td>
+            <td>Repetição do fundo</td>
+          </tr>
+          <tr>
+            <td>Cor e fundo</td>
+            <td>opacity</td>
+            <td>Opacidade do elemento</td>
+          </tr>
+      
+          <!-- Box model -->
+          <tr>
+            <td>Box model</td>
+            <td>width</td>
+            <td>Largura</td>
+          </tr>
+          <tr>
+            <td>Box model</td>
+            <td>height</td>
+            <td>Altura</td>
+          </tr>
+          <tr>
+            <td>Box model</td>
+            <td>padding</td>
+            <td>Espaçamento interno</td>
+          </tr>
+          <tr>
+            <td>Box model</td>
+            <td>margin</td>
+            <td>Espaçamento externo</td>
+          </tr>
+          <tr>
+            <td>Box model</td>
+            <td>border</td>
+            <td>Borda</td>
+          </tr>
+          <tr>
+            <td>Box model</td>
+            <td>border-radius</td>
+            <td>Arredondamento dos cantos</td>
+          </tr>
+          <tr>
+            <td>Box model</td>
+            <td>box-shadow</td>
+            <td>Sombra da caixa</td>
+          </tr>
+      
+          <!-- Posicionamento -->
+          <tr>
+            <td>Posicionamento</td>
+            <td>position</td>
+            <td>Tipo de posicionamento</td>
+          </tr>
+          <tr>
+            <td>Posicionamento</td>
+            <td>top / right / bottom / left</td>
+            <td>Posição em relação ao contêiner</td>
+          </tr>
+          <tr>
+            <td>Posicionamento</td>
+            <td>z-index</td>
+            <td>Ordem de sobreposição</td>
+          </tr>
+          <tr>
+            <td>Posicionamento</td>
+            <td>float</td>
+            <td>Flutuação</td>
+          </tr>
+          <tr>
+            <td>Posicionamento</td>
+            <td>clear</td>
+            <td>Limpa o float</td>
+          </tr>
+      
+          <!-- Flexbox -->
+          <tr>
+            <td>Flexbox</td>
+            <td>display</td>
+            <td>Tipo de exibição (flex, block, inline)</td>
+          </tr>
+          <tr>
+            <td>Flexbox</td>
+            <td>flex-direction</td>
+            <td>Direção dos itens (row, column)</td>
+          </tr>
+          <tr>
+            <td>Flexbox</td>
+            <td>justify-content</td>
+            <td>Alinhamento horizontal</td>
+          </tr>
+          <tr>
+            <td>Flexbox</td>
+            <td>align-items</td>
+            <td>Alinhamento vertical</td>
+          </tr>
+          <tr>
+            <td>Flexbox</td>
+            <td>gap</td>
+            <td>Espaçamento entre itens</td>
+          </tr>
+      
+          <!-- Grid -->
+          <tr>
+            <td>Grid</td>
+            <td>grid-template-columns</td>
+            <td>Define colunas do grid</td>
+          </tr>
+          <tr>
+            <td>Grid</td>
+            <td>grid-template-rows</td>
+            <td>Define linhas do grid</td>
+          </tr>
+          <tr>
+            <td>Grid</td>
+            <td>grid-gap</td>
+            <td>Espaçamento entre células</td>
+          </tr>
+          <tr>
+            <td>Grid</td>
+            <td>grid-column</td>
+            <td>Ocupação de colunas</td>
+          </tr>
+          <tr>
+            <td>Grid</td>
+            <td>grid-row</td>
+            <td>Ocupação de linhas</td>
+          </tr>
+      
+          <!-- Outras -->
+          <tr>
+            <td>Outras</td>
+            <td>overflow</td>
+            <td>Comportamento de conteúdo transbordado</td>
+          </tr>
+          <tr>
+            <td>Outras</td>
+            <td>cursor</td>
+            <td>Tipo de cursor</td>
+          </tr>
+          <tr>
+            <td>Outras</td>
+            <td>visibility</td>
+            <td>Visibilidade do elemento</td>
+          </tr>
+          <tr>
+            <td>Outras</td>
+            <td>display</td>
+            <td>Tipo de exibição</td>
+          </tr>
+      
+          <!-- Animações -->
+          <tr>
+            <td>Animações</td>
+            <td>transition</td>
+            <td>Transição suave entre estados</td>
+          </tr>
+          <tr>
+            <td>Animações</td>
+            <td>transform</td>
+            <td>Transformação visual do elemento</td>
+          </tr>
+          <tr>
+            <td>Animações</td>
+            <td>animation</td>
+            <td>Definir animação com @keyframes</td>
+          </tr>
+        </tbody>
+      </table>
+      
+</body>
+</html>
